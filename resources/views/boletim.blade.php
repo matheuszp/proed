@@ -1,6 +1,6 @@
 <style>
         table thead tr{
-            background-color: #c4c4ac;
+            background-color: #d5d8f6;
         }
 
         .sobre {
@@ -12,9 +12,11 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+            <div style="border: 5px solid #9ea5f7;padding:15px;" class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
             <div class="container mx-auto">
-    <table style="width:100%;" class="bg-white border border-gray-300 shadow-md rounded">
+    <h1 class="text-2xl text-center">Boletim do aluno</h1>
+    <hr style="margin:20px;border: 2px solid #9ea5f7;">
+    <table id="tabela-notas" style="width:100%;" class="bg-white border border-gray-300 shadow-md rounded">
         <thead>
             <tr>
                 <th class="py-2 px-4 border-b border-r text-center">Matéria</th>
@@ -33,7 +35,6 @@
                 <td class="py-2 px-4 border-b border-r text-center">20</td>
                 <td class="py-2 px-4 border-b border-r text-center">2</td>
                 <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
-
             </tr>
             <!-- Linha 2 -->
             <tr>
@@ -46,8 +47,8 @@
             </tr>
             <!-- Linha 3 -->
             <tr>
-                <td class="py-2 px-4 border-b border-r text-center">Ciências</td>
-                <td class="py-2 px-4 border-b border-r text-center">9.0</td>
+                <td class="py-2 px-4 border-b border-r text-center">Química</td>
+                <td class="py-2 px-4 border-b border-r text-center">9</td>
                 <td class="py-2 px-4 border-b border-r text-center">22</td>
                 <td class="py-2 px-4 border-b border-r text-center">1</td>
                 <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
@@ -87,11 +88,46 @@
                 <td class="py-2 px-4 border-b border-r text-center">2</td>
                 <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
             </tr>
+            <tr>
+                <td class="py-2 px-4 border-b border-r text-center">Biologia</td>
+                <td class="py-2 px-4 border-b border-r text-center">7</td>
+                <td class="py-2 px-4 border-b border-r text-center">15</td>
+                <td class="py-2 px-4 border-b border-r text-center">4</td>
+                <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 border-b border-r text-center">Ética</td>
+                <td class="py-2 px-4 border-b border-r text-center">6</td>
+                <td class="py-2 px-4 border-b border-r text-center">10</td>
+                <td class="py-2 px-4 border-b border-r text-center">1</td>
+                <td class="py-2 px-4 border-b border-r text-center text-red-500">REPROVADO</td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 border-b border-r text-center">Inglês</td>
+                <td class="py-2 px-4 border-b border-r text-center">10</td>
+                <td class="py-2 px-4 border-b border-r text-center">20</td>
+                <td class="py-2 px-4 border-b border-r text-center">4</td>
+                <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 border-b border-r text-center">Artes</td>
+                <td class="py-2 px-4 border-b border-r text-center">7.5</td>
+                <td class="py-2 px-4 border-b border-r text-center">10</td>
+                <td class="py-2 px-4 border-b border-r text-center">6</td>
+                <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 border-b border-r text-center">Sociologia</td>
+                <td class="py-2 px-4 border-b border-r text-center">10</td>
+                <td class="py-2 px-4 border-b border-r text-center">40</td>
+                <td class="py-2 px-4 border-b border-r text-center">2</td>
+                <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
+            </tr>
         </tbody>
     </table>
 </div>
 </div>
-        <div class="sobre bg-white overflow-hidden shadow-xl sm:rounded-lg mt-8">
+        <div class="sobre bg-white overflow-hidden shadow-xl sm:rounded-lg mt-8 border">
             <h2 class="text-xl">Sobre o boletim:</h2>
             <p>
                 &nbsp;&nbsp;&nbsp;O boletim apresentado reflete o desempenho acadêmico em diferentes disciplinas. Cada linha representa uma matéria específica,
@@ -106,4 +142,30 @@
         </div>
     </div>
     </div>
+    <script>
+        let table = new DataTable('#tabela-notas', {
+
+            dom: 'Bfrltip',
+
+            scrollX: true,
+
+            buttons: [
+            'excel', 'pdf', 'print'
+            ],
+
+            // lengthMenu: [5, 10, 15, 20],
+
+            language: {
+                url: '//cdn.datatables.net/plug-ins/1.13.7/i18n/pt-BR.json',
+            },
+
+            responsive: false,
+
+            "lengthChange" : false,
+
+            "bInfo":false,
+
+
+        });
+    </script>
 </x-app-layout>
