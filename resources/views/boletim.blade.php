@@ -2,21 +2,31 @@
         table thead tr{
             background-color: #d5d8f6;
         }
+        td{
+            background-color: beige;
+        }
 
         .sobre {
             padding: 10px;
+            background-color: #334155;
+            color: white;
         }
+
+        .dataTables_filter {
+            color: white !important;
+        }
+
 </style>
 
 <x-app-layout>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div style="border: 5px solid #9ea5f7;padding:15px;" class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+            <div style="border: 5px solid #9ea5f7;padding:15px;background-color: #d4d4d4;" class="text-white overflow-hidden shadow-xl sm:rounded-lg">
             <div class="container mx-auto">
     <h1 class="text-2xl text-center">Boletim do aluno</h1>
     <hr style="margin:20px;border: 2px solid #9ea5f7;">
-    <table id="tabela-notas" style="width:100%;" class="bg-white border border-gray-300 shadow-md rounded">
+    <table id="tabela-notas" style="width:100%;" class="display bg-white border border-gray-300 shadow-md rounded">
         <thead>
             <tr>
                 <th class="py-2 px-4 border-b border-r text-center">Matéria</th>
@@ -123,11 +133,32 @@
                 <td class="py-2 px-4 border-b border-r text-center">2</td>
                 <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
             </tr>
+            <tr>
+                <td class="py-2 px-4 border-b border-r text-center">Logística</td>
+                <td class="py-2 px-4 border-b border-r text-center">10</td>
+                <td class="py-2 px-4 border-b border-r text-center">40</td>
+                <td class="py-2 px-4 border-b border-r text-center">2</td>
+                <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 border-b border-r text-center">Administração</td>
+                <td class="py-2 px-4 border-b border-r text-center">10</td>
+                <td class="py-2 px-4 border-b border-r text-center">40</td>
+                <td class="py-2 px-4 border-b border-r text-center">2</td>
+                <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 border-b border-r text-center">Informática</td>
+                <td class="py-2 px-4 border-b border-r text-center">10</td>
+                <td class="py-2 px-4 border-b border-r text-center">40</td>
+                <td class="py-2 px-4 border-b border-r text-center">2</td>
+                <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
+            </tr>
         </tbody>
     </table>
 </div>
 </div>
-        <div class="sobre bg-white overflow-hidden shadow-xl sm:rounded-lg mt-8 border">
+        <div class="sobre overflow-hidden shadow-xl sm:rounded-lg mt-8 border">
             <h2 class="text-xl">Sobre o boletim:</h2>
             <p>
                 &nbsp;&nbsp;&nbsp;O boletim apresentado reflete o desempenho acadêmico em diferentes disciplinas. Cada linha representa uma matéria específica,
@@ -140,20 +171,15 @@
                 áreas que podem exigir maior atenção ou aprimoramento.
             </p>
         </div>
+
     </div>
     </div>
     <script>
-        let table = new DataTable('#tabela-notas', {
-
-            dom: 'Bfrltip',
+        new DataTable('#tabela-notas', {
 
             scrollX: true,
 
-            buttons: [
-            'excel', 'pdf', 'print'
-            ],
-
-            // lengthMenu: [5, 10, 15, 20],
+            lengthMenu: false,
 
             language: {
                 url: '//cdn.datatables.net/plug-ins/1.13.7/i18n/pt-BR.json',
@@ -162,6 +188,8 @@
             responsive: false,
 
             "lengthChange" : false,
+
+
 
             "bInfo":false,
 
