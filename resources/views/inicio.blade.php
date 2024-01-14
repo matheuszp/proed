@@ -75,7 +75,7 @@
                     <div class="p-5 text-center text-white card2" style="background-color: #334155">
                         <p class="pb-10 text-4xl">Nossas imagens:</p>
 
-                    </div>
+                        {{-- CAROUSEL --}}
 
                         @push('styles')
                         <link
