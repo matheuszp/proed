@@ -105,13 +105,7 @@
                 <td class="py-2 px-4 border-b border-r text-center">4</td>
                 <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
             </tr>
-            <tr>
-                <td class="py-2 px-4 border-b border-r text-center">Ética</td>
-                <td class="py-2 px-4 border-b border-r text-center">6</td>
-                <td class="py-2 px-4 border-b border-r text-center">10</td>
-                <td class="py-2 px-4 border-b border-r text-center">1</td>
-                <td class="py-2 px-4 border-b border-r text-center text-red-500">REPROVADO</td>
-            </tr>
+
             <tr>
                 <td class="py-2 px-4 border-b border-r text-center">Inglês</td>
                 <td class="py-2 px-4 border-b border-r text-center">10</td>
@@ -120,21 +114,7 @@
                 <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
             </tr>
             <tr>
-                <td class="py-2 px-4 border-b border-r text-center">Artes</td>
-                <td class="py-2 px-4 border-b border-r text-center">7.5</td>
-                <td class="py-2 px-4 border-b border-r text-center">10</td>
-                <td class="py-2 px-4 border-b border-r text-center">6</td>
-                <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
-            </tr>
-            <tr>
                 <td class="py-2 px-4 border-b border-r text-center">Sociologia</td>
-                <td class="py-2 px-4 border-b border-r text-center">10</td>
-                <td class="py-2 px-4 border-b border-r text-center">40</td>
-                <td class="py-2 px-4 border-b border-r text-center">2</td>
-                <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
-            </tr>
-            <tr>
-                <td class="py-2 px-4 border-b border-r text-center">Logística</td>
                 <td class="py-2 px-4 border-b border-r text-center">10</td>
                 <td class="py-2 px-4 border-b border-r text-center">40</td>
                 <td class="py-2 px-4 border-b border-r text-center">2</td>
