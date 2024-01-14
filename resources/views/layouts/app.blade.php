@@ -162,7 +162,7 @@
             <!-- Page Heading -->
             @if (isset($header))
                 <header class="shadow" style="background-color: #b6bcf9;">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    <div class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
                         {{ $header }}
                     </div>
                 </header>
@@ -181,7 +181,7 @@
     <footer>
 
         <div class="footer">
-            <div class="max-w-7xl mx-auto py-6 px-4 text-white text-center">
+            <div class="px-4 py-6 mx-auto text-center text-white max-w-7xl">
                 <h2>Desenvolvido por: Matheus Estevam Cerazza </h2>
                 <h2>Informações de Contato</h2>
                 <p>Email: contato@example.com</p>
