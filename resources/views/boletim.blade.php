@@ -134,6 +134,13 @@
                 <td class="py-2 px-4 border-b border-r text-center">2</td>
                 <td class="py-2 px-4 border-b border-r text-center text-green-500">APROVADO</td>
             </tr>
+            <tr>
+                <td class="py-2 px-4 border-b border-r text-center">Física</td>
+                <td class="py-2 px-4 border-b border-r text-center">5</td>
+                <td class="py-2 px-4 border-b border-r text-center">40</td>
+                <td class="py-2 px-4 border-b border-r text-center">12</td>
+                <td class="py-2 px-4 border-b border-r text-center text-red-500">REPROVADO</td>
+            </tr>
         </tbody>
     </table>
 </div>

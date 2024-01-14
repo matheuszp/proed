@@ -42,7 +42,7 @@
 
                     </div>
                     <div class="card2">
-                        <h1>Nova Branch Carousel </h1>
+                        <h1>Nova Branch Carousel</h1>
 
                         <style>
                           .slider{
