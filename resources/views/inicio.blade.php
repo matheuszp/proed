@@ -77,7 +77,8 @@
                     </div>
 
                     <div class="p-5 text-center text-white card2" style="background-color: #334155">
-                        <p class="pb-10 text-4xl">Nossa instituição</p>
+                        <p class="pb-10 text-4xl">PROED</p>
+                        <p class="pb-10 text-2xl">Nosso site para os alunos conferirem suas notas e o cronograma</p>
 
                         {{-- CAROUSEL --}}
 
