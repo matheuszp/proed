@@ -201,7 +201,7 @@
 
         <div class="footer">
             <div class="px-4 py-6 mx-auto text-center text-white max-w-7xl">
-                <h2>Desenvolvido por: Matheus Estevam Cerazza </h2>
+                <h2>Desenvolvido por: Matheus Estevam Cerazza & Vinicius Nascimento da Silva</h2>
                 <h2>Informações de Contato</h2>
                 <p>Email: contato@examplo.com</p>
                 <p>Telefone: (11)11111-1111 </p>
