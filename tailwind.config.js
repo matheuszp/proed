@@ -24,6 +24,12 @@ export default {
 };
 
 module.exports = {
+    variants: {
+        extend: {
+          // ...
+         tableLayout: ['hover', 'focus'],
+        }
+      },
     content: [
       "./src/**/*.{html,js}",
       "./node_modules/tw-elements/dist/js/**/*.js"

@@ -13,28 +13,23 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
 
-        {{-- CAROUSEL --}}
-        <link
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
-  rel="stylesheet" />
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
-<script src="https://cdn.tailwindcss.com/3.3.0"></script>
-<script>
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      fontFamily: {
-        sans: ["Roboto", "sans-serif"],
-        body: ["Roboto", "sans-serif"],
-        mono: ["ui-monospace", "monospace"],
-      },
-    },
-    corePlugins: {
-      preflight: false,
-    },
-  };
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+		<script src="https://cdn.tailwindcss.com/3.3.0"></script>
+		<script>
+		tailwind.config = {
+			darkMode: "class",
+			theme: {
+			fontFamily: {
+				sans: ["Roboto", "sans-serif"],
+				body: ["Roboto", "sans-serif"],
+				mono: ["ui-monospace", "monospace"],
+			},
+			},
+			corePlugins: {
+			preflight: false,
+			},
+		};
 </script>
 
 
@@ -79,7 +74,7 @@
                 background-color: #0f172a;
             }
             .footer h2{
-                color:bisque;
+                color:#eab308;
             }
 
             <style>
@@ -208,12 +203,10 @@
             <div class="px-4 py-6 mx-auto text-center text-white max-w-7xl">
                 <h2>Desenvolvido por: Matheus Estevam Cerazza </h2>
                 <h2>Informações de Contato</h2>
-                <p>Email: contato@example.com</p>
-                <p>Telefone: (123) 456-7890</p>
-
+                <p>Email: contato@examplo.com</p>
+                <p>Telefone: (11)11111-1111 </p>
 
             </div>
         </div>
     </footer>
-
 </html>

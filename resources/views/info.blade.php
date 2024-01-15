@@ -1,6 +1,10 @@
 <x-app-layout>
 
     <style>
+        div {
+            font-family: 'Figtree';
+        }
+
         .sobre {
         padding: 10px;
         background-color: #334155;
@@ -9,27 +13,34 @@
         margin-top: 30px;
     }
     th{
-        background-color: rgb(216, 184, 0);
+        background-color: #9ea5f7;
+        color: #000;
+        border: 2px solid #000;
     }
     td{
-        background-color:rgb(255, 255, 255);
+        background-color: #1e293b;
+        color: white;
+        border: 2px solid #000;
+    }
+    table{
+        border: 2px solid #000;
     }
     </style>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-5">
-                <h1 class="text-2xl text-center">Calendário de aulas</h1>
-    <hr style="margin:20px;border: 2px solid #9ea5f7;">
-    <table id="tabela-notas" style="width:100%;" class="display bg-white border border-gray-300 shadow-md rounded">
+            <div style="background-color: #334155" class=" overflow-hidden shadow-xl sm:rounded-lg p-5">
+                <h1 class="text-2xl text-white text-center">Calendário de aulas</h1>
+    <hr style="margin:20px;border: 2px solid #eab308;">
+    <table id="tabela-notas" style="width:100%;" class="display bg-white shadow-md rounded">
         <thead>
             <tr>
-                <th class="py-2 px-4 border-b border-r text-center">Aulas</th>
-                <th class="py-2 px-4 border-b border-r text-center">Segunda</th>
-                <th class="py-2 px-4 border-b border-r text-center">Terça</th>
-                <th class="py-2 px-4 border-b border-r text-center">Quarta</th>
-                <th class="py-2 px-4 border-b border-r text-center">Quinta</th>
-                <th class="py-2 px-4 border-b border-r text-center">Sexta</th>
+                <th class="py-2 px-4 border-b border-r text-center font-bold">Aulas</th>
+                <th class="py-2 px-4 border-b border-r text-center font-bold">Segunda</th>
+                <th class="py-2 px-4 border-b border-r text-center font-bold">Terça</th>
+                <th class="py-2 px-4 border-b border-r text-center font-bold">Quarta</th>
+                <th class="py-2 px-4 border-b border-r text-center font-bold">Quinta</th>
+                <th class="py-2 px-4 border-b border-r text-center font-bold">Sexta</th>
 
             </tr>
         </thead>
@@ -37,7 +48,7 @@
         <tbody>
             <!-- Linha 1 -->
             <tr>
-                <td class="py-2 px-4 border-b border-r text-center text-blue-500">1° aula</td>
+                <td class="py-2 px-4 border-b border-r text-center text-yellow-500 font-bold">1° aula</td>
                 <td class="py-2 px-4 border-b border-r text-center">Mátemática</td>
                 <td class="py-2 px-4 border-b border-r text-center">Filosofia</td>
                 <td class="py-2 px-4 border-b border-r text-center">Português</td>
@@ -46,7 +57,7 @@
             </tr>
             <!-- Linha 2 -->
             <tr>
-                <td class="py-2 px-4 border-b border-r text-center text-blue-500">2° aula</td>
+                <td class="py-2 px-4 border-b border-r text-center text-yellow-500 font-bold">2° aula</td>
                 <td class="py-2 px-4 border-b border-r text-center">Mátematica</td>
                 <td class="py-2 px-4 border-b border-r text-center">Sociologia</td>
                 <td class="py-2 px-4 border-b border-r text-center">Inglês</td>
@@ -56,44 +67,44 @@
             </tr>
             <!-- Linha 3 -->
             <tr>
-                <td class="py-2 px-4 border-b border-r text-center text-blue-500">3° aula</td>
+                <td class="py-2 px-4 border-b border-r text-center text-yellow-500 font-bold">3° aula</td>
                 <td class="py-2 px-4 border-b border-r text-center">Português</td>
                 <td class="py-2 px-4 border-b border-r text-center">Química</td>
                 <td class="py-2 px-4 border-b border-r text-center">Inglês</td>
                 <td class="py-2 px-4 border-b border-r text-center">Informática</td>
-                <td class="py-2 px-4 border-b border-r text-center">Literatura</td>
+                <td class="py-2 px-4 border-b border-r text-center">Administração</td>
 
             </tr>
             <!-- Linha 4-->
             <tr>
-                <td class="py-2 px-4 border-b border-r text-center text-blue-500">4° aula</td>
+                <td class="py-2 px-4 border-b border-r text-center text-yellow-500 font-bold">4° aula</td>
                 <td class="py-2 px-4 border-b border-r text-center">Português</td>
                 <td class="py-2 px-4 border-b border-r text-center">Química</td>
                 <td class="py-2 px-4 border-b border-r text-center">Português</td>
                 <td class="py-2 px-4 border-b border-r text-center">Informática</td>
-                <td class="py-2 px-4 border-b border-r text-center">Literatura</td>
+                <td class="py-2 px-4 border-b border-r text-center">Ética</td>
             </tr>
             <!-- Linha 5-->
             <tr>
-                <td class="py-2 px-4 border-b border-r text-center text-blue-500">5° aula</td>
+                <td class="py-2 px-4 border-b border-r text-center text-yellow-500 font-bold">5° aula</td>
                 <td class="py-2 px-4 border-b border-r text-center">Geografia</td>
                 <td class="py-2 px-4 border-b border-r text-center">Matemática</td>
                 <td class="py-2 px-4 border-b border-r text-center">Física</td>
                 <td class="py-2 px-4 border-b border-r text-center">Administração</td>
-                <td class="py-2 px-4 border-b border-r text-center">Literatura</td>
+                <td class="py-2 px-4 border-b border-r text-center">Redação</td>
             </tr>
             <!-- Linha 6-->
             <tr>
-                <td class="py-2 px-4 border-b border-r text-center text-blue-500">6° aula</td>
+                <td class="py-2 px-4 border-b border-r text-center text-yellow-500 font-bold">6° Aula</td>
                 <td class="py-2 px-4 border-b border-r text-center">Geografia</td>
                 <td class="py-2 px-4 border-b border-r text-center">Matemática</td>
                 <td class="py-2 px-4 border-b border-r text-center">Física</td>
                 <td class="py-2 px-4 border-b border-r text-center">Administração</td>
-                <td class="py-2 px-4 border-b border-r text-center">Literatura</td>
+                <td class="py-2 px-4 border-b border-r text-center">Redação</td>
             </tr>
             <!-- Linha 7-->
             <tr>
-                <td class="py-2 px-4 border-b border-r text-center text-blue-500">7° aula</td>
+                <td class="py-2 px-4 border-b border-r text-center text-yellow-500 font-bold">7° Aula</td>
                 <td class="py-2 px-4 border-b border-r text-center">Biologia</td>
                 <td class="py-2 px-4 border-b border-r text-center">Filosofia</td>
                 <td class="py-2 px-4 border-b border-r text-center">Ed. Física</td>
@@ -101,7 +112,7 @@
                 <td class="py-2 px-4 border-b border-r text-center">Português</td>
             </tr>
             <tr>
-                <td class="py-2 px-4 border-b border-r text-center text-blue-500">8° aula</td>
+                <td class="py-2 px-4 border-b border-r text-center text-yellow-500 font-bold">8° Aula</td>
                 <td class="py-2 px-4 border-b border-r text-center">Biologia</td>
                 <td class="py-2 px-4 border-b border-r text-center">Sociologia</td>
                 <td class="py-2 px-4 border-b border-r text-center">Ed. Física</td>
@@ -110,22 +121,16 @@
             </tr>
         </tbody>
     </table>
-
-
-
-
+</div>
+        <div class="sobre overflow-hidden shadow-xl sm:rounded-lg mt-8">
+                <h2 class="text-xl text-yellow-500 font-bold">Sobre o cronograma:</h2>
+                <p>
+                    &nbsp;Aqui temos o cronograma com o calendário das aulas
+                </p>
+                <p>
+                    &nbsp;Este é o cronograma de aulas fixo dos alunos.
+                </p>
             </div>
-        </div>
-        <div class="sobre overflow-hidden shadow-xl sm:rounded-lg mt-8 border max-w-7xl">
-            <h2 class="text-xl">Sobre o boletim:</h2>
-            <p>
-                &nbsp;Aqui temos o cronograma com o calendário das aulas
-            </p>
-            <p>
-                &nbsp;Este boletim proporciona uma visão clara e organizada do progresso escolar, permitindo uma análise detalhada das notas,
-                frequência e desempenho em cada disciplina. Utilize essas informações para compreender o desenvolvimento acadêmico e identificar
-                áreas que podem exigir maior atenção ou aprimoramento.
-            </p>
         </div>
     </div>
 </x-app-layout>
